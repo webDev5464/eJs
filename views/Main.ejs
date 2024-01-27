@@ -1,0 +1,36 @@
+<%- include('Header') %>
+  <main>
+    <div>
+      <div>
+        <h1>Datas</h1>
+      </div>
+
+      <div>
+        <form action="/data/deleteAll" method="GET">
+
+          <button>Delete</button>
+        </form>
+      </div>
+    </div>
+
+    <% datas.map((x)=> {%>
+      <div class="dataRender">
+        <p>
+          Full Name :
+          <span>
+            <%= x.fname %>
+          </span>
+          <span>
+            <%= x.lname%>
+          </span>
+        </p>
+        <p>
+          Age :
+          <span>
+            <%= x.age %>
+          </span>
+        </p>
+      </div>
+      <%}) %>
+  </main>
+  <%- include('Footer') %>

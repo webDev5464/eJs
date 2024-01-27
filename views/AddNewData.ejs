@@ -1,0 +1,24 @@
+<%- include('Header') %>
+
+  <main>
+    <div class="addNewProduct">
+      <h3>Add New Product</h3>
+      <form action="/data/post" method="post">
+        <div>
+          <label for="fname">Fist Name : </label>
+          <input type="text" name="fname" id="fname">
+        </div>
+        <div>
+          <label for="lname">Last Name : </label>
+          <input type="text" name="lname" id="lname">
+        </div>
+        <div>
+          <label for="age">Age : </label>
+          <input type="number" name="age" id="age">
+        </div>
+        <div><input type="submit" value="Submit"></div>
+      </form>
+    </div>
+  </main>
+
+  <%- include('Footer') %>
